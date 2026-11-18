@@ -1,0 +1,1276 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="SIPILO Privacy Policy - Civil Engineering and Construction Application">
+
+    <meta name="theme-color" content="#123B5D">
+
+    <title>Privacy Policy | SIPILO</title>
+
+    <style>
+        :root {
+            --primary: #123B5D;
+            --secondary: #176B9B;
+            --accent: #EAF3F8;
+            --text: #263746;
+            --muted: #687988;
+            --background: #F4F7F9;
+            --white: #FFFFFF;
+            --border: #DDE6EC;
+            --success-bg: #EEF8F1;
+            --success-border: #72B58A;
+            --warning-bg: #FFF8E8;
+            --warning-border: #D7A642;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+            line-height: 1.75;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* HEADER */
+
+        .header {
+            background: linear-gradient(
+                135deg,
+                #102F49 0%,
+                #17628C 100%
+            );
+            color: var(--white);
+            padding: 42px 20px 48px;
+        }
+
+        .header-container {
+            width: min(1100px, 100%);
+            margin: auto;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+        }
+
+        .brand-logo {
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255,255,255,0.7);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .eyebrow {
+            margin-top: 30px;
+            color: #C9DFEC;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .header h1 {
+            margin: 8px 0 10px;
+            font-size: clamp(32px, 6vw, 48px);
+            line-height: 1.15;
+        }
+
+        .header-description {
+            max-width: 760px;
+            color: #DCEAF2;
+            margin: 0;
+        }
+
+        .header-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 22px;
+            font-size: 13px;
+            color: #D3E4EE;
+        }
+
+        /* MAIN */
+
+        .layout {
+            width: min(1100px, calc(100% - 32px));
+            margin: 30px auto 60px;
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 25px;
+            align-items: start;
+        }
+
+        .sidebar,
+        .content {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            box-shadow: 0 6px 24px rgba(20, 50, 70, 0.05);
+        }
+
+        /* SIDEBAR */
+
+        .sidebar {
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar-title {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 6px 9px;
+            border-radius: 7px;
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.45;
+        }
+
+        .sidebar a:hover {
+            background: var(--accent);
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        /* CONTENT */
+
+        .content {
+            padding: clamp(24px, 5vw, 46px);
+        }
+
+        .notice {
+            background: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .section {
+            scroll-margin-top: 25px;
+        }
+
+        .section + .section {
+            margin-top: 38px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 22px;
+            line-height: 1.35;
+            margin: 0 0 10px;
+        }
+
+        h3 {
+            color: #244E69;
+            font-size: 17px;
+            margin: 24px 0 7px;
+        }
+
+        p {
+            margin: 8px 0 14px;
+        }
+
+        ul {
+            padding-left: 23px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 13px;
+            margin: 18px 0;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            background: #FFFFFF;
+        }
+
+        .card strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .card span {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .ad-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 17px;
+            margin: 12px 0;
+            background: #FAFCFD;
+        }
+
+        .ad-card strong {
+            color: var(--primary);
+        }
+
+        .contact {
+            background: var(--accent);
+            border-radius: 11px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .contact strong {
+            color: var(--primary);
+        }
+
+        .back-top {
+            display: inline-block;
+            margin-top: 25px;
+            font-size: 13px;
+        }
+
+        .small {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0C263B;
+            color: #D7E4EC;
+            padding: 28px 20px;
+            font-size: 13px;
+        }
+
+        .footer-container {
+            width: min(1100px, 100%);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 820px) {
+
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .sidebar nav {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 2px 8px;
+            }
+        }
+
+        @media (max-width: 560px) {
+
+            .header {
+                padding: 30px 16px 36px;
+            }
+
+            .layout {
+                width: calc(100% - 20px);
+                margin-top: 15px;
+            }
+
+            .content {
+                padding: 22px 17px;
+            }
+
+            .sidebar {
+                padding: 16px;
+            }
+
+            .sidebar nav {
+                grid-template-columns: 1fr;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+<header class="header">
+
+    <div class="header-container">
+
+        <div class="brand">
+            <div class="brand-logo">S</div>
+            <div>SIPILO</div>
+        </div>
+
+        <div class="eyebrow">
+            Civil Engineering & Construction Application
+        </div>
+
+        <h1>Privacy Policy</h1>
+
+        <p class="header-description">
+            This Privacy Policy explains how SIPILO accesses, uses,
+            stores, and protects information when you use the application.
+        </p>
+
+        <div class="header-meta">
+            <span>Effective Date: November 18, 2026</span>
+            <span>Last Updated: November 18, 2026</span>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-title">
+            CONTENT
+        </div>
+
+        <nav>
+
+            <a href="#introduction">1. Introduction</a>
+
+            <a href="#scope">2. Application Scope</a>
+
+            <a href="#information">3. Information</a>
+
+            <a href="#permissions">4. Device Permissions</a>
+
+            <a href="#use">5. Use of Information</a>
+
+            <a href="#offline">6. Offline Storage</a>
+
+            <a href="#photos">7. Photos & GPS</a>
+
+            <a href="#ads">8. Advertising</a>
+
+            <a href="#billing">9. Purchases & PRO</a>
+
+            <a href="#thirdparty">10. Third Parties</a>
+
+            <a href="#sharing">11. Data Sharing</a>
+
+            <a href="#security">12. Security</a>
+
+            <a href="#retention">13. Retention & Deletion</a>
+
+            <a href="#backup">14. Backup & Restore</a>
+
+            <a href="#rights">15. User Rights</a>
+
+            <a href="#children">16. Children's Privacy</a>
+
+            <a href="#changes">17. Policy Changes</a>
+
+            <a href="#contact">18. Contact</a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- CONTENT -->
+
+    <main class="content">
+
+        <div class="notice">
+
+            <strong>Important:</strong>
+            SIPILO is designed primarily as an offline-first Android
+            application. Certain services, including advertising and
+            Google Play purchases, may require an internet connection.
+            This policy should be read together with the actual
+            permissions and third-party services included in the
+            released version of SIPILO.
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="section" id="introduction">
+
+            <h2>1. Introduction</h2>
+
+            <p>
+                SIPILO ("SIPILO", "we", "our", or "the Application")
+                is a civil engineering, construction, and project
+                support application designed for engineers, architects,
+                contractors, supervisors, students, and other users
+                involved in technical and construction activities.
+            </p>
+
+            <p>
+                SIPILO may provide engineering calculations,
+                project records, quality-control records,
+                construction documentation, reports, and other
+                technical tools.
+            </p>
+
+            <p>
+                This Privacy Policy explains what information may be
+                accessed or processed by SIPILO, why the information
+                is used, how it is stored, and what choices are
+                available to users.
+            </p>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="section" id="scope">
+
+            <h2>2. Application Scope</h2>
+
+            <p>
+                SIPILO is currently developed and distributed as an
+                Android application. This Privacy Policy therefore
+                describes the Android implementation of SIPILO.
+            </p>
+
+            <p>
+                SIPILO follows an offline-first approach. Core
+                engineering calculations and locally stored project
+                information may remain available without an internet
+                connection.
+            </p>
+
+            <p>
+                Internet access may be required for selected services,
+                including advertisements, Google Play purchase
+                processing, subscription verification, or other
+                third-party services that require network connectivity.
+            </p>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="section" id="information">
+
+            <h2>3. Information SIPILO May Access or Process</h2>
+
+            <p>
+                The information processed depends on the features you
+                use and the permissions you grant.
+            </p>
+
+            <div class="card-grid">
+
+                <div class="card">
+                    <strong>Project Information</strong>
+                    <span>
+                        Project names, project locations entered by
+                        users, notes, technical parameters, work
+                        records, and other project information.
+                    </span>
+                </div>
+
+                <div class="card">
+                    <strong>Engineering Calculations</strong>
+                    <span>
+                        Calculation inputs, units, selected formulas,
+                        calculation results, and calculation history.
+                    </span>
+                </div>
+
+                <div class="card">
+                    <strong>Quality Control Data</strong>
+                    <span>
+                        Test information, observations, QC records,
+                        NCR records, corrective actions, and other
+                        information entered by the user.
+                    </span>
+                </div>
+
+                <div class="card">
+                    <strong>Photos</strong>
+                    <span>
+                        Photos captured or selected by the user for
+                        project documentation and reports.
+                    </span>
+                </div>
+
+                <div class="card">
+                    <strong>Location Information</strong>
+                    <span>
+                        GPS coordinates and related location metadata
+                        when the user enables geotagging features.
+                    </span>
+                </div>
+
+                <div class="card">
+                    <strong>Application Settings</strong>
+                    <span>
+                        Language, unit preferences, report settings,
+                        profile information, and other settings entered
+                        by the user.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="section" id="permissions">
+
+            <h2>4. Device Permissions</h2>
+
+            <p>
+                SIPILO requests device permissions only when required
+                by a feature that uses the corresponding capability.
+            </p>
+
+            <h3>Camera</h3>
+
+            <p>
+                Camera access may be requested when you use the
+                documentation or photo-board features. Camera access
+                is used to capture project documentation.
+            </p>
+
+            <h3>Location</h3>
+
+            <p>
+                Location access may be requested when you use
+                geotagging features. Location information may be
+                displayed on project photographs or documentation
+                when the feature is enabled.
+            </p>
+
+            <h3>Photos and Storage</h3>
+
+            <p>
+                SIPILO may require access to photos or device storage
+                to select, save, export, or manage project
+                documentation, depending on the Android version and
+                the storage mechanism used by the application.
+            </p>
+
+            <p>
+                You can manage permissions through Android system
+                settings. Disabling a permission may prevent the
+                related feature from operating.
+            </p>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="section" id="use">
+
+            <h2>5. How Information Is Used</h2>
+
+            <p>
+                Information may be used to:
+            </p>
+
+            <ul>
+
+                <li>
+                    Provide civil engineering and construction
+                    calculation functions.
+                </li>
+
+                <li>
+                    Store and manage project information.
+                </li>
+
+                <li>
+                    Maintain calculation history.
+                </li>
+
+                <li>
+                    Create project documentation.
+                </li>
+
+                <li>
+                    Generate reports and exported files.
+                </li>
+
+                <li>
+                    Provide quality-control and NCR functions.
+                </li>
+
+                <li>
+                    Save application preferences and settings.
+                </li>
+
+                <li>
+                    Provide advertising services to free users.
+                </li>
+
+                <li>
+                    Process purchases and subscriptions through
+                    Google Play.
+                </li>
+
+                <li>
+                    Maintain application security, reliability,
+                    and functionality.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="section" id="offline">
+
+            <h2>6. Offline-First and Local Data Storage</h2>
+
+            <p>
+                SIPILO is designed so that core application data can
+                be stored locally on the user's Android device.
+            </p>
+
+            <p>
+                Depending on the feature, locally stored information
+                may include project records, calculations, reports,
+                settings, quality-control information, NCR records,
+                and documentation files.
+            </p>
+
+            <p>
+                Local data is not automatically considered a cloud
+                backup. Users should maintain their own backups when
+                the application provides a backup or export feature.
+            </p>
+
+            <p>
+                If the application is uninstalled, the device is
+                reset, storage is cleared, or local files are deleted,
+                locally stored information may be lost unless a
+                separate backup exists.
+            </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="section" id="photos">
+
+            <h2>7. Photos, Documentation, and GPS</h2>
+
+            <p>
+                SIPILO may provide a Photo Board or project
+                documentation feature.
+            </p>
+
+            <p>
+                When you use this feature, photographs may contain
+                information such as:
+            </p>
+
+            <ul>
+
+                <li>
+                    Date and time.
+                </li>
+
+                <li>
+                    GPS latitude and longitude, if enabled.
+                </li>
+
+                <li>
+                    Location accuracy, if available from the device.
+                </li>
+
+                <li>
+                    Altitude, if available from the device.
+                </li>
+
+                <li>
+                    User-entered project information.
+                </li>
+
+                <li>
+                    Notes or descriptions entered by the user.
+                </li>
+
+            </ul>
+
+            <p>
+                You are responsible for ensuring that photographs
+                and location information you create or share through
+                SIPILO do not contain information that you are not
+                authorized to disclose.
+            </p>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="section" id="ads">
+
+            <h2>8. Advertising</h2>
+
+            <p>
+                SIPILO may display advertisements to users who are
+                not subscribed to the PRO service.
+            </p>
+
+            <p>
+                Advertising may be provided through Google AdMob.
+                AdMob may process certain information according to
+                Google's applicable policies and the configuration
+                of the advertising SDK.
+            </p>
+
+            <h3>Native Ads</h3>
+
+            <div class="ad-card">
+
+                <strong>Native Advanced Ads</strong>
+
+                <p>
+                    Native advertisements may be displayed inside
+                    selected application interfaces such as module
+                    lists or other appropriate content areas.
+                    Advertisements will be visually distinguishable
+                    from application content and appropriately labeled.
+                </p>
+
+            </div>
+
+            <h3>Banner Ads</h3>
+
+            <div class="ad-card">
+
+                <strong>Banner Ads</strong>
+
+                <p>
+                    Banner advertisements may appear in designated
+                    areas of the application. They should not obscure
+                    primary controls, important information, or
+                    calculator input fields.
+                </p>
+
+            </div>
+
+            <h3>Rewarded Interstitial Ads</h3>
+
+            <div class="ad-card">
+
+                <strong>Rewarded Ads</strong>
+
+                <p>
+                    SIPILO may provide optional rewarded advertising
+                    that allows a user to receive a temporary benefit
+                    after voluntarily viewing an eligible advertisement.
+                </p>
+
+                <p>
+                    A reward is granted only after the advertising
+                    SDK confirms the applicable reward event.
+                </p>
+
+            </div>
+
+            <h3>PRO Users</h3>
+
+            <p>
+                When a valid PRO entitlement is active, SIPILO is
+                designed to disable normal advertisements and avoid
+                unnecessary advertising requests where technically
+                supported by the application.
+            </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="section" id="billing">
+
+            <h2>9. Purchases, Subscriptions, and PRO</h2>
+
+            <p>
+                SIPILO may provide paid PRO features through
+                Google Play Billing.
+            </p>
+
+            <p>
+                Available purchase options may include subscription
+                periods such as monthly, three-month, six-month,
+                or annual plans, depending on the products configured
+                in Google Play.
+            </p>
+
+            <p>
+                Payment information is processed by Google Play.
+                SIPILO does not directly receive or store your
+                complete payment card information.
+            </p>
+
+            <p>
+                SIPILO may receive purchase or entitlement information
+                necessary to determine whether a user has an active
+                PRO entitlement and to provide the corresponding
+                application features.
+            </p>
+
+            <p>
+                Purchase restoration is handled through the supported
+                Google Play purchase mechanisms.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="section" id="thirdparty">
+
+            <h2>10. Third-Party Services</h2>
+
+            <p>
+                SIPILO may use third-party services to provide
+                specific application functions.
+            </p>
+
+            <h3>Google AdMob</h3>
+
+            <p>
+                Used to provide supported advertising formats,
+                including Native, Banner, and Rewarded advertising.
+            </p>
+
+            <p>
+                Google Privacy Policy:
+                <a href="https://policies.google.com/privacy"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    https://policies.google.com/privacy
+                </a>
+            </p>
+
+            <h3>Google Play Billing</h3>
+
+            <p>
+                Used to process purchases and subscriptions for
+                eligible SIPILO PRO products.
+            </p>
+
+            <p>
+                Google Play services are subject to Google's applicable
+                terms and policies.
+            </p>
+
+            <p>
+                Third-party services may have their own privacy
+                policies. Users should review those policies when
+                applicable.
+            </p>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="section" id="sharing">
+
+            <h2>11. Data Sharing and Disclosure</h2>
+
+            <p>
+                SIPILO does not sell your personal information.
+            </p>
+
+            <p>
+                Information may be processed or disclosed when
+                reasonably necessary to:
+            </p>
+
+            <ul>
+
+                <li>
+                    Provide a feature explicitly requested by the user.
+                </li>
+
+                <li>
+                    Provide advertising through third-party
+                    advertising services.
+                </li>
+
+                <li>
+                    Process purchases and subscriptions.
+                </li>
+
+                <li>
+                    Comply with applicable laws or lawful requests.
+                </li>
+
+                <li>
+                    Protect the security, rights, or integrity of
+                    the application and its users.
+                </li>
+
+            </ul>
+
+            <p>
+                Data intentionally exported or shared by the user,
+                such as a PDF, spreadsheet, CSV file, photograph,
+                or project backup, is controlled by the user after
+                it leaves the application.
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="section" id="security">
+
+            <h2>12. Data Security</h2>
+
+            <p>
+                SIPILO is designed with reasonable technical measures
+                intended to protect locally stored application data
+                against accidental loss, unauthorized access, and
+                misuse.
+            </p>
+
+            <p>
+                However, no electronic storage system can be guaranteed
+                to be completely secure.
+            </p>
+
+            <p>
+                Users should protect their Android device with an
+                appropriate screen lock, operating-system security
+                updates, and other available security controls.
+            </p>
+
+            <p>
+                Users should also maintain backups of important
+                project information.
+            </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section class="section" id="retention">
+
+            <h2>13. Data Retention and Deletion</h2>
+
+            <p>
+                Locally stored project and application information
+                generally remains on the device until the user edits,
+                deletes, exports, or removes the application data.
+            </p>
+
+            <p>
+                Deleting application data or uninstalling SIPILO may
+                remove locally stored information, subject to the
+                Android storage behavior and any files stored outside
+                the application's private storage.
+            </p>
+
+            <p>
+                Information processed by third-party services is
+                subject to the retention policies of those services.
+            </p>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section class="section" id="backup">
+
+            <h2>14. Backup and Restore</h2>
+
+            <p>
+                SIPILO may provide backup and restore functionality
+                for application data.
+            </p>
+
+            <p>
+                Backup files may contain project information,
+                calculation records, settings, and other data selected
+                for backup.
+            </p>
+
+            <p>
+                Users are responsible for protecting exported backup
+                files. Do not share backup files with unauthorized
+                persons because they may contain project or personal
+                information.
+            </p>
+
+            <p>
+                SIPILO does not guarantee recovery of a backup that
+                has been corrupted, modified, lost, or created using
+                an incompatible application version.
+            </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section class="section" id="rights">
+
+            <h2>15. User Rights and Choices</h2>
+
+            <p>
+                Depending on the applicable law and the information
+                involved, users may have rights or choices concerning
+                their information.
+            </p>
+
+            <p>
+                Users may generally:
+            </p>
+
+            <ul>
+
+                <li>
+                    Access information stored inside the application.
+                </li>
+
+                <li>
+                    Edit or delete available project records.
+                </li>
+
+                <li>
+                    Manage camera and location permissions through
+                    Android settings.
+                </li>
+
+                <li>
+                    Manage application data through Android settings.
+                </li>
+
+                <li>
+                    Create or export available backups.
+                </li>
+
+                <li>
+                    Stop using the application and uninstall it.
+                </li>
+
+                <li>
+                    Manage Google Play purchases through their
+                    Google Play account.
+                </li>
+
+            </ul>
+
+            <p>
+                Certain information processed by third-party services
+                must be managed directly through the applicable
+                third-party service.
+            </p>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section class="section" id="children">
+
+            <h2>16. Children's Privacy</h2>
+
+            <p>
+                SIPILO is a professional and educational technical
+                application intended primarily for civil engineering,
+                construction, architecture, project management,
+                and related activities.
+            </p>
+
+            <p>
+                SIPILO is not specifically directed toward children
+                and does not knowingly request personal information
+                from children for the purpose of creating a personal
+                profile.
+            </p>
+
+            <p>
+                If a parent or guardian believes that a child has
+                provided personal information in a manner that should
+                not have occurred, please contact the developer using
+                the information below.
+            </p>
+
+        </section>
+
+
+        <!-- 17 -->
+
+        <section class="section" id="changes">
+
+            <h2>17. Changes to This Privacy Policy</h2>
+
+            <p>
+                This Privacy Policy may be updated when SIPILO features,
+                technologies, third-party services, legal requirements,
+                or data practices change.
+            </p>
+
+            <p>
+                The latest version will be published on the official
+                SIPILO privacy-policy page.
+            </p>
+
+            <p>
+                The "Last Updated" date at the top of this page will
+                indicate when the policy was most recently revised.
+            </p>
+
+        </section>
+
+
+        <!-- 18 -->
+
+        <section class="section" id="contact">
+
+            <h2>18. Contact</h2>
+
+            <p>
+                If you have questions, concerns, or requests regarding
+                this Privacy Policy or the handling of information
+                within SIPILO, please contact the application developer.
+            </p>
+
+            <div class="contact">
+
+                <p>
+                    <strong>Application:</strong><br>
+                    SIPILO
+                </p>
+
+                <p>
+                    <strong>Category:</strong><br>
+                    Civil Engineering, Construction, and Project Support
+                </p>
+
+                <p>
+                    <strong>Developer Email:</strong><br>
+                    <a href="mailto:YOUR-EMAIL@example.com">
+                        YOUR-EMAIL@example.com
+                    </a>
+                </p>
+
+                <p class="small">
+                    Replace the developer email above with the official
+                    support or privacy email before publishing this page.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <a class="back-top" href="#top">
+            ↑ Back to top
+        </a>
+
+    </main>
+
+</div>
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+            <strong>SIPILO</strong><br>
+            Civil Engineering & Construction Application
+        </div>
+
+        <div>
+            © 2026 SIPILO. All Rights Reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
+```
